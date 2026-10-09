@@ -20,6 +20,12 @@ for (let i = 0; i < 12; i++) {
   bub.appendChild(b);
 }
 
+// Van: wait until the image has fully loaded (slow wifi!), THEN play the drive-in animation
+const van = $('.van');
+const go = () => requestAnimationFrame(() => van.classList.add('loaded'));
+if (van.complete && van.naturalWidth) go();
+else { van.addEventListener('load', go); van.addEventListener('error', go); }
+
 // Scroll reveal
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
 $$('[data-reveal]').forEach(el => io.observe(el));

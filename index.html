@@ -30,7 +30,9 @@
 <!-- FONTS: Unbounded (headings) + Figtree (body), self-hosted in /fonts and loaded in css/input.css -->
 
 <!-- COMPILED CSS (Tailwind + custom). Edit css/input.css or tailwind.config.js then run: npm run build -->
+<link rel="preload" as="image" href="images/van.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
+<noscript><style>.van{opacity:1!important;animation:none!important}</style></noscript>
 </head>
 <body>
 
@@ -91,7 +93,12 @@
   </div>
 
   <!-- The van drives in under the headline. Replace images/van.png to change it -->
-  <img class="van absolute bottom-3 left-[-4%] z-20 lg:left-[5vw]" src="images/van.png" alt="External Clean Guernsey van" width="1904" height="826">
+  <!-- Small WebP loads first (115KB); PNG is only a fallback for very old browsers.
+       js/main.js adds class "loaded" once the image is ready, which starts the drive-in animation. -->
+  <picture>
+    <source srcset="images/van.webp" type="image/webp">
+    <img class="van absolute bottom-3 left-[-4%] z-20 lg:left-[5vw]" src="images/van.png" alt="External Clean Guernsey van" width="1400" height="607" fetchpriority="high" decoding="async">
+  </picture>
   <div class="road absolute inset-x-0 bottom-0 z-10 h-4"></div>
 </section>
 
