@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>External Clean Guernsey | Gutter Cleaning, Soft Wash & Pressure Washing</title>
+<meta name="description" content="Guernsey's premier external cleaning company. Gutter cleaning, house soft wash, roof cleaning, pressure washing and repainting for homes and businesses. Free quotes.">
+<meta name="theme-color" content="#0a3df0">
+
+<!-- FAVICON + APP ICONS (files in /images) -->
+<link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- OPEN GRAPH / SOCIAL PREVIEW — change the URL once the domain is live. og-image.jpg should be 1200x630 -->
+<link rel="canonical" href="https://www.externalcleanguernsey.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="External Clean Guernsey">
+<meta property="og:title" content="External Clean Guernsey | Everything External">
+<meta property="og:description" content="Gutter cleaning, soft wash, roof cleaning and pressure washing across Guernsey. Free quotes.">
+<meta property="og:url" content="https://www.externalcleanguernsey.com/">
+<meta property="og:image" content="https://www.externalcleanguernsey.com/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- LOCAL BUSINESS SEO DATA -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"External Clean Guernsey","telephone":"+447781122348","email":"externalcleanguernsey@gmail.com","areaServed":"Guernsey, Channel Islands","priceRange":"Free quotes"}
+</script>
+
+<!-- FONTS: Unbounded (headings) + Figtree (body), self-hosted in /fonts and loaded in css/input.css -->
+
+<!-- COMPILED CSS (Tailwind + custom). Edit css/input.css or tailwind.config.js then run: npm run build -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header id="header" class="fixed inset-x-0 top-0 z-50 text-white backdrop-blur transition-colors">
+  <div class="flex h-16 items-center justify-between px-4 md:px-8 lg:px-[6vw]">
+    <a href="#top" class="flex items-center gap-2 font-display text-sm font-extrabold sm:text-base"><img src="images/logo.png" alt="" width="32" height="32" class="h-8 w-8 rounded-lg">External Clean <span class="text-aqua">Guernsey</span></a>
+    <nav class="hidden items-center gap-8 text-sm font-semibold md:flex" aria-label="Main">
+      <a class="hover:text-aqua" href="#services">Services</a><a class="hover:text-aqua" href="#results">Results</a><a class="hover:text-aqua" href="#reviews">Reviews</a><a class="hover:text-aqua" href="#faq">FAQ</a>
+      <a href="#quote" class="rounded-full bg-white px-6 py-2 font-bold text-royal transition hover:bg-aqua hover:text-ink">Free quote</a>
+    </nav>
+    <button id="menu-btn" class="grid h-12 w-12 place-items-center rounded-full border border-white/30 text-xl md:hidden" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+  <nav id="menu" class="hidden border-t border-white/10 bg-navy px-4 py-4 md:hidden" aria-label="Mobile">
+    <a class="block py-3 text-lg font-semibold" href="#services">Services</a><a class="block py-3 text-lg font-semibold" href="#results">Results</a><a class="block py-3 text-lg font-semibold" href="#reviews">Reviews</a><a class="block py-3 text-lg font-semibold" href="#faq">FAQ</a>
+    <a class="mt-2 block rounded-full bg-white py-4 text-center font-bold text-royal" href="#quote">Get a free quote</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO (fits one screen on every device) ============
+  Art lives in images/art/: house.svg + floating bits (pressure-washer, bucket, spray-bottle, sponge). Van: images/van.png -->
+<section class="hero relative flex flex-col overflow-hidden text-white">
+  <!-- Copy -->
+  <div class="hero-copy relative z-10 px-4 pt-20 md:px-8 lg:flex lg:flex-1 lg:items-center lg:px-[6vw] lg:pt-16">
+    <div class="lg:w-[54%]">
+      <p class="mb-4 w-fit rounded-full bg-white/15 px-4 py-1 text-xs font-semibold backdrop-blur sm:text-sm">Free quotes · Domestic &amp; commercial</p>
+      <h1 class="hero-title font-extrabold">Everything external, done properly.</h1>
+      <p class="hero-sub mt-4 max-w-md text-base text-white/85 sm:text-lg lg:max-w-lg">Guernsey's premier external cleaning company. Gutters, roofs, patios, driveways and house fronts, restored by a local team.</p>
+      <div class="mt-6 flex gap-2 sm:gap-4">
+        <a href="#quote" class="rounded-full bg-white px-6 py-4 text-sm font-bold text-royal shadow-xl transition hover:-translate-y-1 hover:bg-aqua hover:text-ink sm:px-8 sm:text-base">Get a free quote</a>
+        <a href="tel:+447781122348" class="rounded-full border-2 border-white/60 px-6 py-4 text-sm font-bold transition hover:bg-white hover:text-royal sm:px-8 sm:text-base">Call us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Art stage: house on the right with floating cleaning kit -->
+  <div class="pointer-events-none relative min-h-0 flex-1 lg:absolute lg:inset-y-0 lg:right-0 lg:w-[56%] lg:flex-none" aria-hidden="true">
+    <!-- Bubbles (made by js/main.js) stay inside this box, behind the house, away from the text -->
+    <div id="bubbles" class="absolute inset-0 overflow-hidden lg:left-[18%]"></div>
+    <div class="glow absolute right-[-10%] top-[5%] h-[90%] w-[90%] lg:right-0 lg:top-[8%] lg:h-[80%] lg:w-[90%]"></div>
+    <img src="images/art/house.svg" alt="" class="absolute bottom-[8%] right-[-4%] h-[70%] w-auto max-w-none lg:bottom-[9%] lg:right-[4%] lg:h-[72%]">
+    <img src="images/art/pressure-washer.svg" alt="" class="float absolute left-[2%] top-[2%] w-[40%] lg:left-[1%] lg:top-[14%] lg:w-[30%]" style="--r:-5deg;--d:6s">
+    <img src="images/art/spray-bottle.svg" alt="" class="float absolute right-[10%] top-[0%] w-[11%] lg:right-[7%] lg:top-[22%] lg:w-[8%]" style="--r:10deg;--d:5s;--delay:-1s">
+    <img src="images/art/sponge.svg" alt="" class="float absolute bottom-[2%] right-[34%] w-[17%] lg:bottom-[4%] lg:right-[30%] lg:w-[12%]" style="--r:-8deg;--d:7s;--delay:-2s">
+    <img src="images/art/bucket.svg" alt="" class="float absolute bottom-[1%] right-[3%] w-[19%] lg:bottom-[3%] lg:right-[4%] lg:w-[12%]" style="--r:6deg;--d:6.5s;--delay:-3s">
+    <span class="spark" style="left:46%;top:8%;--s:20px"></span><span class="spark" style="right:30%;top:38%;--s:14px;--delay:-.8s"></span>
+    <span class="spark" style="right:6%;top:30%;--s:24px;--delay:-1.6s"></span><span class="spark" style="left:30%;top:46%;--s:12px;--delay:-.4s"></span>
+  </div>
+
+  <!-- The van drives in under the headline. Replace images/van.png to change it -->
+  <img class="van absolute bottom-3 left-[-4%] z-20 lg:left-[5vw]" src="images/van.png" alt="External Clean Guernsey van" width="1904" height="826">
+  <div class="road absolute inset-x-0 bottom-0 z-10 h-4"></div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="overflow-hidden bg-ink py-4 text-sm font-bold text-aqua sm:text-base" aria-hidden="true">
+  <div class="marquee gap-8 whitespace-nowrap">
+    <span>Gutter cleaning ✦ House soft wash ✦ Roof cleaning ✦ Pressure washing ✦ Patio &amp; driveway restoration ✦ Soffit &amp; fascia ✦ Deck cleaning ✦ Repainting ✦ Free quotes ✦&nbsp;</span>
+    <span>Gutter cleaning ✦ House soft wash ✦ Roof cleaning ✦ Pressure washing ✦ Patio &amp; driveway restoration ✦ Soffit &amp; fascia ✦ Deck cleaning ✦ Repainting ✦ Free quotes ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============
+  To add a service, copy an <article>. Photos go in /images (service-*.jpg) -->
+<section id="services" class="bg-ice px-4 py-16 md:px-6 md:py-24">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="h2 max-w-2xl text-navy" data-reveal>If it's on the outside, we clean it.</h2>
+    <p class="mt-4 max-w-xl text-lg text-navy/70" data-reveal>One local team for the whole exterior. Pick one service or bundle a few for a better price on the day.</p>
+    <div class="mt-12 grid gap-4 md:grid-cols-6 md:gap-6">
+      <article class="group overflow-hidden rounded-3xl bg-white shadow-[0_16px_40px_-16px_rgba(10,61,240,.3)] md:col-span-4" data-reveal>
+        <div class="ph h-52 md:h-72" data-label="images/service-gutters.jpg"><img src="images/service-gutters.jpg" alt="Gutter cleaning in Guernsey" loading="lazy" class="transition duration-700 group-hover:scale-105" onerror="this.remove()"></div>
+        <div class="p-6"><h3 class="font-display text-xl font-extrabold">Gutter cleaning &amp; survey</h3><p class="mt-2 text-navy/70">Blocked gutters cause damp, stains and rot. We clear them by hand, flush the downpipes and check for leaks and damage.</p></div>
+      </article>
+      <article class="rounded-3xl bg-royal p-6 text-white shadow-[0_16px_40px_-16px_rgba(10,61,240,.6)] md:col-span-2" data-reveal>
+        <h3 class="font-display text-xl font-extrabold">House soft wash</h3><p class="mt-2 text-white/85">Low-pressure treatment that kills algae and moss at the root. Safe for render, paint and cladding, and it stays clean for years, not weeks.</p>
+      </article>
+      <article class="group overflow-hidden rounded-3xl bg-white shadow-[0_16px_40px_-16px_rgba(10,61,240,.3)] md:col-span-2" data-reveal>
+        <div class="ph h-48" data-label="images/service-roof.jpg"><img src="images/service-roof.jpg" alt="Roof cleaning" loading="lazy" class="transition duration-700 group-hover:scale-105" onerror="this.remove()"></div>
+        <div class="p-6"><h3 class="font-display text-xl font-extrabold">Roof cleaning</h3><p class="mt-2 text-navy/70">Professional, safe moss and lichen removal that protects your tiles.</p></div>
+      </article>
+      <article class="group overflow-hidden rounded-3xl bg-white shadow-[0_16px_40px_-16px_rgba(10,61,240,.3)] md:col-span-4" data-reveal>
+        <div class="grid md:grid-cols-2">
+          <div class="ph h-48 md:h-auto" data-label="images/service-pressure-wash.jpg"><img src="images/service-pressure-wash.jpg" alt="Pressure washing a patio" loading="lazy" class="transition duration-700 group-hover:scale-105" onerror="this.remove()"></div>
+          <div class="p-6"><h3 class="font-display text-xl font-extrabold">Pressure washing</h3><p class="mt-2 text-navy/70">Patios, driveways, paths and steps brought back to a like-new finish, with patio and driveway restoration.</p></div>
+        </div>
+      </article>
+      <article class="rounded-3xl bg-ink p-6 text-white md:col-span-3" data-reveal><h3 class="font-display text-xl font-extrabold text-aqua">Repainting</h3><p class="mt-2 text-white/75">Once it's clean, we paint it. Exterior walls, fascias and window frames prepped and finished to last.</p></article>
+      <article class="rounded-3xl bg-navy p-6 text-white md:col-span-3" data-reveal><h3 class="font-display text-xl font-extrabold text-aqua">Commercial &amp; property management</h3><p class="mt-2 text-white/75">Shopfronts, car parks, offices and rental properties, scheduled around your opening hours.</p></article>
+    </div>
+    <ul class="mt-8 flex flex-wrap gap-2 text-sm font-semibold text-navy" data-reveal>
+      <li class="rounded-full bg-white px-4 py-2">Soffit &amp; fascia clean</li><li class="rounded-full bg-white px-4 py-2">Deck cleaning &amp; repairs</li><li class="rounded-full bg-white px-4 py-2">Facilities management</li><li class="rounded-full bg-white px-4 py-2">Conservatories</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ BEFORE / AFTER ============
+  Each slider needs two photos with the SAME framing: images/before-1.jpg + images/after-1.jpg -->
+<section id="results" class="relative -mt-8 rounded-t-[32px] bg-ink px-4 py-16 text-white md:px-6 md:py-24">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="h2 max-w-2xl" data-reveal>Drag to see the difference.</h2>
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      <figure data-reveal>
+        <div class="ba">
+          <div class="ph absolute inset-0" data-label="images/before-1.jpg"><img src="images/before-1.jpg" alt="Driveway before cleaning" loading="lazy" onerror="this.remove()"></div>
+          <div class="after ph" data-label="images/after-1.jpg"><img src="images/after-1.jpg" alt="Driveway after cleaning" loading="lazy" onerror="this.remove()"></div>
+          <span class="tag left-4">Before</span><span class="tag right-4">After</span>
+          <div class="bar"></div><input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+        </div>
+        <figcaption class="mt-4 font-semibold">Driveway pressure wash, St Peter Port</figcaption>
+      </figure>
+      <figure data-reveal>
+        <div class="ba">
+          <div class="ph absolute inset-0" data-label="images/before-2.jpg"><img src="images/before-2.jpg" alt="Rendered wall before soft wash" loading="lazy" onerror="this.remove()"></div>
+          <div class="after ph" data-label="images/after-2.jpg"><img src="images/after-2.jpg" alt="Rendered wall after soft wash" loading="lazy" onerror="this.remove()"></div>
+          <span class="tag left-4">Before</span><span class="tag right-4">After</span>
+          <div class="bar"></div><input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+        </div>
+        <figcaption class="mt-4 font-semibold">House soft wash, Castel</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS (a real sequence, so numbered) ============ -->
+<section class="relative -mt-8 rounded-t-[32px] bg-royal px-4 py-16 text-white md:px-6 md:py-24" style="background-image:radial-gradient(50% 60% at 90% 0,#3d8bff55,transparent)">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="h2 max-w-xl" data-reveal>Quote to clean in three steps.</h2>
+    <ol class="mt-12 grid gap-8 md:grid-cols-3">
+      <li data-reveal><span class="outline-num font-display text-7xl font-extrabold">1</span><h3 class="mt-2 font-display text-lg font-extrabold">Tell us what needs doing</h3><p class="mt-2 text-white/80">Call, message or use the form. Photos help.</p></li>
+      <li data-reveal><span class="outline-num font-display text-7xl font-extrabold">2</span><h3 class="mt-2 font-display text-lg font-extrabold">Get a free fixed quote</h3><p class="mt-2 text-white/80">Clear price, no pressure, no hidden extras.</p></li>
+      <li data-reveal><span class="outline-num font-display text-7xl font-extrabold">3</span><h3 class="mt-2 font-display text-lg font-extrabold">We clean, you enjoy</h3><p class="mt-2 text-white/80">We turn up on time and leave everything tidy.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============
+  PLACEHOLDER QUOTES: replace with real customer reviews (e.g. from their Facebook page) before launch -->
+<section id="reviews" class="relative -mt-8 rounded-t-[32px] bg-ice px-4 py-16 md:px-6 md:py-24">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="h2 max-w-2xl text-navy" data-reveal>Neighbours say it best.</h2>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <blockquote class="rounded-3xl bg-white p-6 shadow-[0_16px_40px_-16px_rgba(10,61,240,.3)]" data-reveal><p class="text-volt">★★★★★</p><p class="mt-4 text-lg font-medium">"Our patio hadn't looked this good since we moved in. Turned up when they said and left it spotless."</p><footer class="mt-6 text-sm text-navy/60">Customer name, St Sampson</footer></blockquote>
+      <blockquote class="rounded-3xl bg-royal p-6 text-white" data-reveal><p class="text-aqua">★★★★★</p><p class="mt-4 text-lg font-medium">"Gutters were completely blocked. Cleared in an hour and they showed us photos of the problem areas."</p><footer class="mt-6 text-sm text-white/70">Customer name, Vale</footer></blockquote>
+      <blockquote class="rounded-3xl bg-white p-6 shadow-[0_16px_40px_-16px_rgba(10,61,240,.3)]" data-reveal><p class="text-volt">★★★★★</p><p class="mt-4 text-lg font-medium">"We use them for all our rental properties now. Reliable, fairly priced and easy to deal with."</p><footer class="mt-6 text-sm text-navy/60">Customer name, Property manager</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="bg-ice px-4 pb-16 md:px-6 md:pb-24">
+  <div class="mx-auto max-w-3xl">
+    <h2 class="h2 text-navy" data-reveal>Common questions</h2>
+    <div class="mt-8 divide-y divide-navy/10 rounded-3xl bg-white px-6 shadow-[0_16px_40px_-16px_rgba(10,61,240,.3)]">
+      <details class="py-6"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">Is soft washing safe for my paint and render?<span class="plus text-2xl text-volt transition">+</span></summary><p class="mt-4 text-navy/70">Yes. Soft wash uses low pressure and a biodegradable treatment, so it's gentle on surfaces while killing growth at the root.</p></details>
+      <details class="py-6"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">How much does it cost?<span class="plus text-2xl text-volt transition">+</span></summary><p class="mt-4 text-navy/70">Every quote is free and fixed once we know the size and access. Send a few photos for the fastest price.</p></details>
+      <details class="py-6"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">Do you cover the whole island?<span class="plus text-2xl text-volt transition">+</span></summary><p class="mt-4 text-navy/70">Yes, all Guernsey parishes, for homes and businesses.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE FORM ============
+  Sends via FormSubmit.co to the email in action=. The first live submission triggers a one-time activation email to that address. -->
+<section id="quote" class="relative -mt-8 rounded-t-[32px] px-4 py-16 text-white md:px-6 md:py-24" style="background:radial-gradient(60% 60% at 15% 10%,#2a6bff,transparent),linear-gradient(160deg,#0a3df0,#06165c)">
+  <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2">
+    <div data-reveal>
+      <h2 class="h2">Get your free quote.</h2>
+      <p class="mt-4 max-w-md text-white/85">Tell us what needs cleaning and we'll come back with a clear price, usually within a day.</p>
+      <p class="mt-8 font-display text-2xl font-extrabold"><a href="tel:+447781122348">07781 122348</a></p>
+      <p class="mt-2"><a class="underline" href="mailto:externalcleanguernsey@gmail.com">externalcleanguernsey@gmail.com</a></p>
+    </div>
+    <form id="quote-form" action="https://formsubmit.co/externalcleanguernsey@gmail.com" method="POST" class="space-y-4 rounded-3xl bg-white p-6 text-ink shadow-2xl md:p-8" data-reveal>
+      <input type="hidden" name="_subject" value="New quote request from the website">
+      <input type="hidden" name="_captcha" value="false"><!-- honeypot below handles spam, so no captcha page -->
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://www.externalcleanguernsey.com/thanks.html"><!-- js/main.js swaps this for the real site address automatically -->
+      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off"><!-- spam trap -->
+      <label class="block text-sm font-semibold">Name<input required name="name" autocomplete="name" class="mt-2 h-12 w-full rounded-xl border border-navy/15 bg-ice px-4 text-base focus:border-volt focus:outline-none"></label>
+      <label class="block text-sm font-semibold">Phone<input required type="tel" name="phone" autocomplete="tel" class="mt-2 h-12 w-full rounded-xl border border-navy/15 bg-ice px-4 text-base focus:border-volt focus:outline-none"></label>
+      <label class="block text-sm font-semibold">Email<input type="email" name="email" autocomplete="email" class="mt-2 h-12 w-full rounded-xl border border-navy/15 bg-ice px-4 text-base focus:border-volt focus:outline-none"></label>
+      <label class="block text-sm font-semibold">Service
+        <select name="service" class="mt-2 h-12 w-full rounded-xl border border-navy/15 bg-ice px-4 text-base focus:border-volt focus:outline-none">
+          <option>Gutter cleaning</option><option>House soft wash</option><option>Roof cleaning</option><option>Pressure washing</option><option>Repainting</option><option>Commercial</option><option>Not sure yet</option>
+        </select></label>
+      <label class="block text-sm font-semibold">Details<textarea name="message" rows="4" class="mt-2 w-full rounded-xl border border-navy/15 bg-ice p-4 text-base focus:border-volt focus:outline-none"></textarea></label>
+      <button type="submit" class="h-14 w-full rounded-full bg-royal font-bold text-white transition hover:bg-ink">Send quote request</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink px-4 py-12 text-sm text-white/70 md:px-6">
+  <div class="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+    <p class="flex items-center gap-2 font-display font-extrabold text-white"><img src="images/logo.png" alt="" width="32" height="32" class="h-8 w-8 rounded-lg">External Clean Guernsey</p>
+    <p>© <span id="year"></span> External Clean Guernsey. Guernsey, Channel Islands.</p>
+    <p><a class="hover:text-white" href="tel:+447781122348">07781 122348</a> · <a class="hover:text-white" href="mailto:externalcleanguernsey@gmail.com">Email us</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
